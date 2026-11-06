@@ -345,7 +345,16 @@ async function startScanner() {
             { facingMode: "environment" },
             {
                 fps: 10,
-                qrbox: { width: 220, height: 220 }
+                qrbox: (viewfinderWidth, viewfinderHeight) => {
+                    const size = Math.floor(
+                        Math.min(viewfinderWidth, viewfinderHeight) * 0.75
+                    );
+
+                    return {
+                        width: size,
+                        height: size
+                    };
+                }
             },
             decodedText => {
                 const asset = getAssetByNumber(decodedText);
