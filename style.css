@@ -1097,33 +1097,3 @@ select:focus {
         grid-column: auto;
     }
 }
-
-/* MOBILE QR SCANNER FIX */
-#reader {
-    position: relative;
-    min-height: 0;
-    height: auto;
-    background: #E9EFF8;
-}
-
-#reader__scan_region {
-    min-height: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-#reader__scan_region video {
-    display: block;
-    width: 100% !important;
-    height: auto !important;
-    object-fit: cover;
-}
-
-#reader__dashboard,
-#reader__dashboard_section,
-#reader__dashboard_section_csr,
-#reader__dashboard_section_fsr {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
