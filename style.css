@@ -284,6 +284,10 @@ select:focus-visible {
     font-weight: 700;
 }
 
+#reader:not(:has(video)) {
+    min-height: 220px;
+}
+
 /* BUTTONS */
 
 .scanner-actions {
