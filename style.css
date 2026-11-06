@@ -240,7 +240,6 @@ select:focus-visible {
 }
 
 /* CAMERA */
-
 #reader {
     width: 100%;
     min-height: 220px;
@@ -251,7 +250,8 @@ select:focus-visible {
 }
 
 #reader video {
-    width: 100%;
+    display: block;
+    max-width: 100%;
     border-radius: 14px;
     object-fit: cover;
 }
@@ -261,12 +261,19 @@ select:focus-visible {
 }
 
 #reader__scan_region {
-    min-height: 190px;
+    min-height: 0 !important;
+    width: 100%;
+    overflow: hidden;
+}
+
+#reader__scan_region video {
+    display: block;
 }
 
 #reader__dashboard {
     padding: 10px;
     font-size: 12px;
+    background: transparent !important;
 }
 
 #reader__dashboard button {
