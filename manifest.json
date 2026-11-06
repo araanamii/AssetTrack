@@ -1,0 +1,12 @@
+{
+    "name": "AssetTrack - Asset Management System",
+    "short_name": "AssetTrack",
+    "description": "A QR-based asset management and monitoring platform.",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#f7f6ef",
+    "theme_color": "#26352f",
+    "icons": []
+}
